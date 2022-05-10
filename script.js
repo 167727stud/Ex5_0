@@ -14,7 +14,7 @@
       })
   })
 
-  cw1.addEventListener("click", function () {
+  cw1.addEventListener("click", function (){
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then(response => response.json())
       .then(array => {
@@ -34,6 +34,24 @@
 
   cw2.addEventListener("click", function () {
     //TODO implement it
+    answer.innerHTML = "Loading ......."
+    answer.innerHTML = "Loading ........."
+    answer.innerHTML = "Loading ............."
+     answer.innerHTML = "Loading ...................."
+     fetch('https://jsonplaceholder.typicode.com/posts')
+      .then(response => response.json())
+      .then(array => {
+        console.log(array)
+        answer.innerHTML = "  "
+        array.forEach(post => answer.innerHTML+=
+          `
+  ${post.userId}
+          <hr/>
+          `
+          
+          );
+      })
+    
   })
 
   cw3.addEventListener("click", function () {
