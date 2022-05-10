@@ -19,7 +19,7 @@
       .then(response => response.json())
       .then(array => {
         console.log(array)
-        answer.innerHTML = " "
+        answer.innerHTML = "  "
         array.forEach(post => answer.innerHTML+=
           `
   ${post.userId}
