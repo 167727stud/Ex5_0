@@ -75,8 +75,8 @@
     fetch('https://jsonplaceholder.typicode.com/posts', {
   method: 'POST',
   body: JSON.stringify({
-    title: 'nowy',
-    body: 'nowynowynowynowynowynowynowynowynowynowynowynowy',
+    title: 'XD',
+    body: 'XD',
     userId: 7,
   }),
   headers: {
